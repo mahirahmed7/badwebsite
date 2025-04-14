@@ -1,0 +1,200 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    background-image: url('https://web.archive.org/web/20090829094211/http://geocities.com/Area51/Corridor/5177/stars.gif');
+    color: #00FF00;
+    font-family: 'Comic Sans MS', cursive;
+    line-height: 1.2;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #FF00FF;
+    border: 5px solid #FFFF00;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #FF0000, #00FF00, #0000FF);
+}
+
+h1 {
+    font-family: 'Papyrus', fantasy;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #000000;
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+marquee {
+    background-color: #000000;
+    color: #FFFF00;
+    padding: 10px;
+    font-size: 24px;
+}
+
+/* Navigation */
+nav {
+    background-color: #0000FF;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #00FFFF;
+    padding: 15px;
+    border: 3px dashed #FF0000;
+}
+
+.sidebar ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.sidebar a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #FF0000;
+    font-size: 18px;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 2px solid #000000;
+}
+
+.services ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.services li {
+    margin: 10px 0;
+    padding-left: 20px;
+    background-image: url('https://web.archive.org/web/20090829094211/http://geocities.com/Area51/Corridor/5177/arrow.gif');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.testimonials blockquote {
+    background-color: #FFFF00;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 5px solid #FF0000;
+    font-style: italic;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 20px;
+    background-color: #FF00FF;
+    padding: 20px;
+    border: 3px solid #00FF00;
+}
+
+.contact-form h2 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+button {
+    background-color: #0000FF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #FF0000;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Animations */
+@keyframes rainbow {
+    0% { color: #FF0000; }
+    20% { color: #FFA500; }
+    40% { color: #FFFF00; }
+    60% { color: #00FF00; }
+    80% { color: #0000FF; }
+    100% { color: #FF0000; }
+}
+
+h2 {
+    animation: rainbow 5s infinite;
+} 
